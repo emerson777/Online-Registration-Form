@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Dosis', sans-serif;
+    background-color: #55ACEF;
+}
+/* HEADER*/
+
+header {
+    background: #2D3945;
+    color: #fff;
+    height: 84px;
+    width: 100%;
+    text-transform: uppercase;
+}
+header h1 {
+    margin-top: 0;
+    text-align: center;
+    vertical-align: middle;
+    height: 84px;
+    line-height: 90px;
+    font-size: 1.5em;
+}
+.head {
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 3px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.head h3 {
+    font-size: 1.3em;
+    color: #2D3945;
+}
+.head p {
+    color: #2D3945;
+}
+/* MAIN*/
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    color: #7F8D9A;
+}
+.lines {
+    height: 12px;
+    width: 100%;
+    border-top: solid 6px #2D3945;
+    border-bottom: solid 3px #2D3945;
+    margin: 0 auto;
+}
+/* FORM */
+
+.first {
+    border: 0;
+}
+.first {
+    border-bottom: 1px solid #3B5997;
+    width: 95%;
+    margin: 0 auto;
+}
+#full_name,
+#email {
+    text-align: right;
+}
+legend {
+    padding-top: 20px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #FFF;
+}
+form {
+    background: #24313C;
+    margin: 5px auto;
+    border-radius: 10px;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.radio {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+    border: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    height: auto;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+    transition: background-color 0.9s ease;
+    background: #99ff99;
+}
+#full_name:focus,
+#email:focus {
+    text-align: left;
+}
+.second label,
+.radio label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+    font-size: 16px;
+}
+.second h2 {
+    color: #fff;
+}
+input[type=radio] {
+    display: none;
+}
+.second label:before,
+.radio label:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #55ACEF;
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(40, 40, 40, .8);
+}
+.radio label:before {
+    border-radius: 8px;
+}
+input[type=radio]:checked + label:before {
+    content: "\2022";
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 9px;
+}
+input[type=checkbox] {
+    display: none;
+}
+.checkbox label:before {
+    border-radius: 3px;
+}
+.checkbox label:before {
+    border-radius: 3px;
+}
+input[type=checkbox]:checked + label:before {
+    content: "\2713";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    line-height: 15px;
+}
+input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    background: #179B77;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.5em;
+    border-radius: 5px;
+    border: none;
+}
+.second p:last-child {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+
+@media screen and (min-width: 760px) {
+    form,
+    .lines {
+        max-width: 500px;
+    }
+    .head p {
+        font-size: 1.3em;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="tel"],
+    select {
+        width: 70%;
+        margin-bottom: 0;
+    }
+    .radio {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    form p {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 29px;
+    }
+    textarea {
+        height: 134px;
+    }
+}
+
+
+@media screen and (min-width: 1280px) {
+    form,
+    .lines {
+        max-width: 650px;
+    }
+    input[type="submit"] {
+        width: 80%;
+        margin: 0 auto;
+    }
+    textarea {
+        display: block;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
