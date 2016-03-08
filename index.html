@@ -49,8 +49,8 @@
                   <input id="city" name="city" type="text"  required aria-required="true">
                </p>
                <p>
-                  <label>Country</label>
-                  <select required>
+                  <label for="country">Country</label>
+                  <select id="country" required>
                      <option value="" disabled selected>Choose Country </option>
                      <option value="">Country...</option>
                      <option value="AF">Afghanistan</option>
@@ -303,8 +303,8 @@
                   </select>
                </p>
                <p>
-                  <label>State</label>
-                  <select name="state" required>
+                  <label for="state">State</label>
+                  <select id="state" required>
                      <option value="" disabled selected>Choose State</option>
                      <option value="AL">Alabama</option>
                      <option value="AK">Alaska</option>
@@ -382,7 +382,7 @@
                   <input type="radio" id="text" name="format">
                   <label for="text">Plain Text</label>
                </div>
-               <p>Other topics you'd like to hear about</p>
+               <label for="comment" class="comment">Other topics you'd like to hear about</label>
                <textarea id="comment" name="comment"></textarea>
                <p>
                   <input type="submit" value="Sign me up!" id="submit">
